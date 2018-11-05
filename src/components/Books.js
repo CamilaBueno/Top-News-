@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-import Footer from "./Footer"
+
 
 class Books extends Component {
   state = {
     posts:[]
   }
+  
   componentDidMount() {
     axios.get('https://api.nytimes.com/svc/topstories/v2/books.json?api-key=3014d0ff0ef5478a87cbb3a6bcaacb0b')
        .then(res =>{
@@ -26,8 +27,6 @@ class Books extends Component {
               <span className="card-title">{post.title}</span>
               <p>{post.abstract}</p>
               <a href={post.url} >Link da notícia</a>
-              <br></br>
-              <button>Marcar como lida</button>
             </div>
           </div>
         )

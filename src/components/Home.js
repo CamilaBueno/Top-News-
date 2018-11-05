@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-import Footer from "./Footer"
+
 
 class Home extends Component {
   state = {
@@ -26,8 +26,6 @@ class Home extends Component {
               <span className="card-title">{post.title}</span>
               <p>{post.abstract}</p>
               <a href={post.url} >Link da notícia</a>
-              <br></br>
-              <button>Marcar como lida</button>
             </div>
           </div>
         )

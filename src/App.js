@@ -5,7 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Books from './components/Books'
 import Movies from './components/Movies'
-import Footer from "./components/Footer"
+
 
 class App extends Component {
   render() {

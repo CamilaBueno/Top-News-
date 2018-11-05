@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-import Footer from "./Footer"
+
 
 class Movies extends Component {
   state = {
