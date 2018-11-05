@@ -26,8 +26,6 @@ class Movies extends Component {
               <span className="card-title">{post.title}</span>
               <p>{post.abstract}</p>
               <a href={post.url} >Link da notícia</a>
-              <br></br>
-              <button>Marcar como lida!</button>
             </div>
           </div>
         )
